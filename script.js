@@ -1,6 +1,6 @@
 // ===========================
 // GERADOR DE SENHAS
-// Desenvolvido por Eduarda Lorrani
+// Desenvolvido por Kauane Kanak Caetano
 // ===========================
 
 
