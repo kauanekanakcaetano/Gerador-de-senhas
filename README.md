@@ -8,15 +8,14 @@ O **Gerador de Senhas** é uma aplicação web desenvolvida com **HTML5**, **CSS
 
 ##  Funcionalidades
 
-- 🔐 Gerar senhas aleatórias.
-- 📏 Definir a quantidade de caracteres.
-- 🔠 Incluir letras maiúsculas.
-- 🔡 Incluir letras minúsculas.
-- 🔢 Incluir números.
-- 💜 Incluir símbolos especiais.
-- 📋 Copiar a senha gerada com um clique.
-- 📊 Exibir a força da senha.
-- ⏳ Mostrar uma estimativa do tempo para descobrir a senha.
+-  Gerar senhas aleatórias.
+-  Definir a quantidade de caracteres.
+-  Incluir letras maiúsculas.
+-  Incluir letras minúsculas.
+-  Incluir números.
+-  Copiar a senha gerada com um clique.
+-  Exibir a força da senha.
+-  Mostrar uma estimativa do tempo para descobrir a senha.
 
 ---
 
@@ -47,7 +46,7 @@ O **Gerador de Senhas** é uma aplicação web desenvolvida com **HTML5**, **CSS
 2. Abra a pasta do projeto.
 3. Execute o arquivo **index.html** em qualquer navegador.
 4. Escolha as configurações desejadas.
-5. Clique em **🔄 Gerar Senha**.
+5. Clique em **✨  Gerar Senha**.
 
 ---
 
