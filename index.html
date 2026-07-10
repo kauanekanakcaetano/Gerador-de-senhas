@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas | Kauane Kanak Caetano</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Cabeçalho -->
+        <div class="logo">🔒</div>
+
+        <h1>Gerador de Senhas</h1>
+
+        <p class="autor">
+            Desenvolvido por <strong>Eduarda Lorrani</strong>
+        </p>
+
+        <p class="subtitulo">
+            Gere instantaneamente uma senha aleatória e segura.
+        </p>
+
+
+        <!-- Campo da senha -->
+        <section class="conteudo-senha">
+
+            <label for="campo-senha">
+                Senha gerada
+            </label>
+
+            <input
+                type="text"
+                id="campo-senha"
+                placeholder="Clique em Gerar Senha"
+                readonly>
+
+
+            <div class="acoes">
+
+                <button id="gerar">
+                    🔄 Gerar Senha
+                </button>
+
+                <button id="copiar">
+                    📋 Copiar
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <h2>Personalize sua senha</h2>
+
+
+        <section class="parametros">
+
+
+            <!-- Quantidade de caracteres -->
+            <div class="parametro-senha">
+
+                <h4 class="parametro-senha__titulo">
+                    Número de caracteres
+                </h4>
+
+
+                <div class="parametro-senha-botoes">
+
+                    <button class="parametro-senha__botao">
+                        -
+                    </button>
+
+
+                    <p class="parametro-senha__texto">
+                        12
+                    </p>
+
+
+                    <button class="parametro-senha__botao">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Características -->
+            <div class="parametro-senha">
+
+                <h4 class="parametro-senha__titulo">
+                    Características da senha
+                </h4>
+
+
+                <div class="parametro-senha-checkbox">
+
+                    <input
+                        type="checkbox"
+                        class="checkbox"
+                        id="maiusculo"
+                        checked>
+
+                    <label for="maiusculo">
+                        Letras maiúsculas
+                    </label>
+
+                </div>
+
+
+                <div class="parametro-senha-checkbox">
+
+                    <input
+                        type="checkbox"
+                        class="checkbox"
+                        id="minusculo"
+                        checked>
+
+                    <label for="minusculo">
+                        Letras minúsculas
+                    </label>
+
+                </div>
+
+
+                <div class="parametro-senha-checkbox">
+
+                    <input
+                        type="checkbox"
+                        class="checkbox"
+                        id="numero"
+                        checked>
+
+                    <label for="numero">
+                        Números
+                    </label>
+
+                </div>
+
+
+                <div class="parametro-senha-checkbox">
+
+                    <input
+                        type="checkbox"
+                        class="checkbox"
+                        id="simbolo"
+                        checked>
+
+                    <label for="simbolo">
+                        Símbolos
+                    </label>
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <!-- Força da senha -->
+            <div class="parametro-senha">
+
+                <h4 class="parametro-senha__titulo">
+                    Força da senha
+                </h4>
+
+
+                <div class="barra">
+
+                    <div class="forca fraca"></div>
+
+                </div>
+
+
+                <div class="parametro-senha-textos">
+
+                    <p>🔴 Fraca</p>
+                    <p>🟡 Média</p>
+                    <p>🟢 Forte</p>
+
+                </div>
+
+
+                <p class="entropia"></p>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+:root{
+    --branco:#ffffff;
+    --roxo-fundo:#f3e8ff;
+    --roxo-claro:#e9d5ff;
+    --roxo-medio:#c084fc;
+    --roxo-escuro:#7e22ce;
+    --roxo-borda:#9333ea;
+    --texto:#4c1d95;
+    --fundo-barra:#ddd6fe;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#f3e8ff,#e9d5ff,#d8b4fe);
+    color:var(--texto);
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+    min-height:100vh;
+}
+
+.container{
+    width:100%;
+    max-width:950px;
+}
+
+.logo{
+    font-size:75px;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+h1{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:10px;
+    color:var(--roxo-escuro);
+}
+
+.autor{
+    text-align:center;
+    font-size:18px;
+    margin-bottom:10px;
+    color:var(--texto);
+    font-weight:bold;
+}
+
+.subtitulo{
+    text-align:center;
+    color:#6b21a8;
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+.conteudo-senha{
+    margin-bottom:35px;
+}
+
+.conteudo-senha label{
+    display:block;
+    margin-bottom:10px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+#campo-senha{
+    width:100%;
+    padding:18px;
+    border:2px solid var(--roxo-borda);
+    border-radius:12px;
+    font-size:22px;
+    background:white;
+    color:var(--texto);
+    outline:none;
+}
+
+.acoes{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.acoes button{
+    flex:1;
+    background:var(--roxo-escuro);
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
+
+.acoes button:hover{
+    background:#6b21a8;
+    transform:translateY(-3px);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:var(--roxo-escuro);
+}
+
+.parametros{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.parametro-senha{
+    background:var(--branco);
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 8px 20px rgba(126,34,206,.2);
+}
+
+.parametro-senha__titulo{
+    margin-bottom:20px;
+    text-align:center;
+    color:var(--roxo-escuro);
+}
+
+.parametro-senha-botoes{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.parametro-senha__botao{
+    background:var(--roxo-escuro);
+    color:white;
+    border:none;
+    padding:18px 25px;
+    font-size:24px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.parametro-senha__botao:hover{
+    background:#6b21a8;
+    transform:scale(1.05);
+}
+
+.parametro-senha__texto{
+    background:white;
+    color:var(--texto);
+    border-top:2px solid var(--roxo-borda);
+    border-bottom:2px solid var(--roxo-borda);
+    padding:18px 25px;
+    font-size:24px;
+    min-width:70px;
+    text-align:center;
+}
+
+.parametro-senha-checkbox{
+    margin:14px 0;
+}
+
+.checkbox{
+    width:18px;
+    height:18px;
+    cursor:pointer;
+}
+
+.parametro-senha-checkbox label{
+    margin-left:8px;
+    cursor:pointer;
+}
+
+.barra{
+    width:100%;
+    height:30px;
+    background:var(--fundo-barra);
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:10px;
+}
+
+.forca{
+    height:30px;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.fraca{
+    width:25%;
+    background:#ef4444;
+}
+
+.media{
+    width:60%;
+    background:#facc15;
+}
+
+.forte{
+    width:100%;
+    background:#22c55e;
+}
+
+.parametro-senha-textos{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.entropia{
+    margin-top:18px;
+    text-align:center;
+    font-size:15px;
+    line-height:22px;
+}
+
+button{
+    border-radius:10px;
+}
+
+button:active{
+    transform:scale(.95);
+}
+
+input[type="checkbox"]{
+    accent-color:var(--roxo-escuro);
+}
+
+@media(max-width:768px){
+
+    .parametros{
+        grid-template-columns:1fr;
+    }
+
+    .acoes{
+        flex-direction:column;
+    }
+
+    h1{
+        font-size:34px;
+    }
+
+    .logo{
+        font-size:60px;
+    }
+
+    #campo-senha{
+        font-size:18px;
+    }
+
+}
